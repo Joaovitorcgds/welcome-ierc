@@ -3,9 +3,9 @@ import logo from "../../assets/logo.jpg"
 export function Header(){
   return(
     <>
-      <div className="flex flex-col justify-center items-center m-10 gap-4">
-        <img src={logo} alt="" className="rounded-full" width={70}/>
-        <h1 className="text-center font-bold">Cadastro de Visitantes</h1>
+      <div className="flex justify-end items-center py-5 px-5 gap-4 shadow-lg">
+        <h1 className="text-center font-bold">IERC admin</h1>
+        <img src={logo} alt="" className="rounded-full" width={50}/>
       </div>
     </>
   )
