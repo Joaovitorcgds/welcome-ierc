@@ -73,7 +73,7 @@ export function FirstStep(){
             {errors.telephone && <span className="text-red-500">Esse campo é obrigatório!</span>}
           </div>
 
-          <input type="submit" value={"próximo"} className="py-2 px-6 w-1/5 bg-[#202020] text-white text-center font-semibold self-end rounded-md hover:cursor-pointer hover:bg-[#505050]"></input>
+          <input type="submit" value={"próximo"} className="py-2 px-6 w-1/5 bg-[#202020] text-white text-center font-semibold self-end rounded-md hover:cursor-pointer hover:bg-[#505050] min-w-32"></input>
         </form>
       </div>
     </div>
