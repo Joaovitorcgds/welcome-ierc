@@ -1,6 +1,4 @@
 import { useForm } from "react-hook-form"
-import { ArrowRight } from "phosphor-react"
-// import { useEffect } from "react";
 import { useAuth } from "../../../hooks/auth";
 import { useNavigate } from "react-router-dom";
 
@@ -25,10 +23,6 @@ export function FirstStep(){
     })
     navigate("/register/2")
   }
-
-  // useEffect(() => {
-  //   console.log(user);
-  // },[user])
   
 
   const onSubmit = (data) => {
@@ -79,15 +73,9 @@ export function FirstStep(){
             {errors.telephone && <span className="text-red-500">Esse campo é obrigatório!</span>}
           </div>
 
-          <div className="flex justify-end items-center mb-14 gap-2 hover:cursor-pointer hover:bor">
-            <input type="submit" value={"próximo"} className="text-right hover:cursor-pointer"/>
-            <ArrowRight size={32} />
-          </div>
-          
+          <input type="submit" value={"próximo"} className="py-2 px-6 w-1/5 bg-[#202020] text-white text-center font-semibold self-end rounded-md hover:cursor-pointer hover:bg-[#505050]"></input>
         </form>
       </div>
     </div>
   )
 }
-
-// "bg-black text-white py-3 rounded-lg font-bold cursor-pointer hover:opacity-85"

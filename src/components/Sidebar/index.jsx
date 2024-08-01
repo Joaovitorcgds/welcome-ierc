@@ -21,7 +21,7 @@ export function Sidebar(){
   return(
     <aside className={ isOpen ? "bg-[#202020] w-screen z-10 fixed h-screen px-5 py-6" : "hidden lg:block bg-[#202020] w-[400px] h-screen px-5 py-6"}>
       <div className="flex justify-between items-center mb-10">
-        <Link to="/" className="flex items-center gap-3 hover:cursor-pointer">
+        <Link to="/" onClick={() => setIsOpen(false)} className="flex items-center gap-3 hover:cursor-pointer">
           <img src={logo} alt="Logo Ierc" className="w-11 rounded-md"/>
           <h2 className="text-white text-center font-semibold text-xl">Plataforma IERC</h2>
         </Link>
@@ -33,7 +33,7 @@ export function Sidebar(){
           <GoPersonAdd size={30}/>
           <span>Cadastrar Visitantes</span> 
         </Link>
-        <Link rel="stylesheet" to="/visitors" className="flex items-center text-white gap-3 text-center py-2 px-2 text-xl rounded-lg hover:bg-[#505050]">
+        <Link rel="stylesheet" to="/visitors" onClick={() => setIsOpen(false)} className="flex items-center text-white gap-3 text-center py-2 px-2 text-xl rounded-lg hover:bg-[#505050]">
           <RiGroupLine size={30}/>
           <span>Visitante Cadastrados</span>
         </Link>
