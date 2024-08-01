@@ -16,6 +16,7 @@ export function AuthProvider({children}) {
     decision: ""
   });
   const [loading, setLoading] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   // const [token, setToken] = useState<string | undefined>(Cookies.get("token"));
 
   // const handleLogin = async (values: LoginFormInput) => {
@@ -80,6 +81,9 @@ export function AuthProvider({children}) {
         //
         loading,
         setLoading,
+        //
+        isOpen, 
+        setIsOpen
       }}
     >
       {children}

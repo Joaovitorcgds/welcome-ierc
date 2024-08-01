@@ -6,6 +6,7 @@ import { SignupPage } from '../pages/Signup/index.jsx';
 import { LoginPage } from '../pages/Login/index.jsx';
 import { FirstStep } from '../pages/Register/FirstStep/index.jsx';
 import { SecondStep } from '../pages/Register/SecondStep/index.jsx';
+import { Home } from '../pages/Home/index.jsx';
 
 export const router = createBrowserRouter([
   {
@@ -24,19 +25,25 @@ export const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children:[
       {
-        path: "register/1",
+        path: "home",
+        element: <Home/>,
+      },
+    ]
+  },
+  {
+    path: "/register/",
+    element: <App/>,
+    errorElement: <ErrorPage />,
+    children:[
+      {
+        path: "1",
         element: <FirstStep/>,
       },
       {
-        path: "register/2",
+        path: "2",
         element: <SecondStep/>,
       },
     ]
   },
 ]);
 
-// ReactDOM.createRoot(document.getElementById('root')).render(
-//   <React.StrictMode>
-//     <RouterProvider router={router} />
-//   </React.StrictMode>,
-// )

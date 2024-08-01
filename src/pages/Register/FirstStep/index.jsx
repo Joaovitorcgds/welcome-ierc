@@ -46,13 +46,13 @@ export function FirstStep(){
             {errors.name && <span className="text-red-500">Esse campo é obrigatório!</span>}
           </div>
 
-          <div className="flex justify-between items-center">
-            <div className="flex flex-col w-1/2">
+          <div className="flex justify-between gap-5 md:items-center flex-col md:flex-row">
+            <div className="flex flex-col md:w-1/2">
               <label htmlFor="birthday" className="font-semibold text-lg mb-2">Data de Nascimento</label>
               <input type="date"  {...register("birthday")} className="border-2 rounded-lg focus:border-blue-500 px-1 py-2" />
             </div>
 
-            <div className="flex flex-col w-1/3">
+            <div className="flex flex-col md:w-1/3">
               <label htmlFor="birthday" className="font-semibold text-lg mb-2">Sexo</label>
               <div className="flex gap-3">
                 <label className="radio">
