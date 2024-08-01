@@ -63,7 +63,7 @@ export function FirstStep(){
 
           <div className="flex flex-col ">
             <label htmlFor="phone" className="font-semibold text-lg mb-2">Telefone</label>
-            <input type="number" data-ls-module="charCounter" maxLength="20" {...register("phone", { required: true })} className="border-2 rounded-lg focus:border-blue-500 px-1 py-2" />
+            <input type="number" {...register("phone", { required: true })} className="border-2 rounded-lg focus:border-blue-500 px-1 py-2" />
             {errors.phone && <span className="text-red-500">Esse campo é obrigatório!</span>}
           </div>
 
