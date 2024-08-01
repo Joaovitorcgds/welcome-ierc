@@ -29,7 +29,7 @@ export function Sidebar(){
         {isOpen ? <X className="text-white lg:hidden" size={32} weight="bold" onClick={toggleMenu} /> : <></>}
       </div>
       <nav className="flex flex-col gap-4 text-xl">
-        <Link rel="stylesheet" to="/register/1" onClick={toggleMenu} className="flex items-center text-white gap-3 text-center py-2 px-2 text-xl rounded-lg hover:bg-[#505050]">
+        <Link rel="stylesheet" to="/register/1" onClick={() => setIsOpen(false)} className="flex items-center text-white gap-3 text-center py-2 px-2 text-xl rounded-lg hover:bg-[#505050]">
           <AiOutlineUsergroupAdd size={30}/>
           <span>Cadastrar Visitantes</span> 
         </Link>

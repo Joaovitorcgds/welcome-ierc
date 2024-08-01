@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form"
 import { ArrowRight } from "phosphor-react"
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import { useAuth } from "../../../hooks/auth";
 import { useNavigate } from "react-router-dom";
 
@@ -26,9 +26,9 @@ export function FirstStep(){
     navigate("/register/2")
   }
 
-  useEffect(() => {
-    console.log(user);
-  },[user])
+  // useEffect(() => {
+  //   console.log(user);
+  // },[user])
   
 
   const onSubmit = (data) => {
