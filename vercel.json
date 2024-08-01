@@ -3,12 +3,11 @@
     {
       "src": "/(.*)",
       "dest": "/",
-      "headers": [
+      "headers": 
         {
           "key": "access-control-allow-origin",
           "value": "*"
         }
-      ]
     }
   ]          
 }
