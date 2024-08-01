@@ -10,7 +10,7 @@ export function Home(){
       <Sidebar/>
       <div className='flex flex-col w-full h-screen'>
         <Header/> 
-        <div className="h-screen flex flex-col justify-center items-center gap-5">  
+        <div className="h-[100vh_-_90px] flex flex-col justify-center items-center gap-5">  
           <h1 className="font-bold text-4xl text-center">
             Bem vindo a plaforma IERC
           </h1>
